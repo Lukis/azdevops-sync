@@ -15,7 +15,7 @@ namespace WorkItemSync
             config.BaseUrl = GetEnvironmentVariable("DevOpsOrganizationUrl");
             config.MasterProjectName = GetEnvironmentVariable("MasterProject");
             config.PersonalAccessToken = GetEnvironmentVariable("PersonalAccessToken");
-            config.UserName = GetEnvironmentVariable("UserName"); ;
+            config.UserName = GetEnvironmentVariable("DevOpsUser"); ;
             string syncProjects = GetEnvironmentVariable("SyncEnabledProjects");
             config.SyncEnabledProjects = syncProjects.Split(';').ToList();
 
