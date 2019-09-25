@@ -4,6 +4,7 @@ using System.Text;
 using WorkItemSync.Models;
 using Newtonsoft.Json;
 using System.Linq;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 
 namespace WorkItemSync
 {
@@ -97,6 +98,22 @@ namespace WorkItemSync
                     }
                 }
             }
+            return request;
+        }
+
+        public static WorkItemRequest GetRequest(WorkItem workItem, string eventName)
+        {
+            var request = new WorkItemRequest();
+            request.EventName = eventName;
+            request.Id = workItem.Id.Value;
+            request.Rev = workItem.Rev.Value.ToString();
+            request.State = workItem.Fields["System.State"].ToString();
+            request.StateReason = workItem.Fields["System.Reason"].ToString();
+
+            request.WorkItemType = workItem.Fields["System.WorkItemType"].ToString();
+            request.Title = workItem.Fields["System.Title"].ToString();
+            request.TeamProject = workItem.Fields["System.TeamProject"].ToString();
+
             return request;
         }
     }
