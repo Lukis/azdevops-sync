@@ -19,8 +19,6 @@ namespace WorkItemSync
         {
             log.LogInformation("HTTP triggered function WorkItemCreated.");
 
-            string name = req.Query["name"];
-
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             log.LogInformation(requestBody);
 
@@ -30,7 +28,7 @@ namespace WorkItemSync
             RequestRouter router = new RequestRouter(log);
             router.Route(workItemRequest);
 
-            return (ActionResult)new OkObjectResult($"You Sent, {requestBody}");
+            return (ActionResult)new OkObjectResult($"OK");
         }
     }
 }

@@ -19,15 +19,16 @@ namespace WorkItemSync
         {
             log.LogInformation("HTTP triggered function WorkItemUpdated.");
 
-            string name = req.Query["name"];
-
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             log.LogInformation(requestBody);
 
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            var workItemRequest = WorkItemRequestFactory.GetRequest(data, "update");
 
-            return (ActionResult)new OkObjectResult($"You Sent, {requestBody}");
+            RequestRouter router = new RequestRouter(log);
+            router.Route(workItemRequest);
+
+            return (ActionResult)new OkObjectResult("OK");
         }
     }
 }

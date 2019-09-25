@@ -1,7 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using System.Text;
+using WorkItemSync.Models;
 
 namespace WorkItemSync
 {
@@ -11,12 +14,25 @@ namespace WorkItemSync
         public RequestRouter(ILogger log)
         {
             _log = log;
-
         }
 
-        internal void Route(dynamic workItemRequest)
+        internal void Route(WorkItemRequest workItemRequest)
         {
-            throw new NotImplementedException();
+            var devOpsConfig = DevOpsConfigFactory.GetConfiguration();
+            if (devOpsConfig.SyncEnabledProjects.Contains(workItemRequest.TeamProject))
+            {
+                
+                UserStorySync userStorySync = new UserStorySync(devOpsConfig, _log);
+                if (userStorySync.CanHandler(workItemRequest))
+                {
+                    userStorySync.HandleRequest(workItemRequest);
+                }
+
+            }
+            else
+            {
+                _log.LogInformation($"Skipping WorkItem for Project: {workItemRequest.TeamProject}");
+            }
         }
     }
 }

@@ -15,5 +15,6 @@ namespace WorkItemSync.Models
         public List<string> Tags { get; set; }
         public string State { get; internal set; }
         public string StateReason { get; internal set; }
+        public string Rev { get; internal set; }
     }
 }

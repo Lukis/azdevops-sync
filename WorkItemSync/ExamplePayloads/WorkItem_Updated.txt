@@ -1,0 +1,172 @@
+﻿Method: POST
+URI: https://rsmappdev-workitem-sync.azurewebsites.net/api/WorkItemUpdated?code=uxVvYQ7IsU2RFs6g//vT9M2qXfsfmiMiCb8y5FpMIWaMzWKJKXVJGw==
+HTTP Version: 1.1
+Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+Content:
+{
+  "subscriptionId": "0f521ac7-be96-4281-82b9-c9d392613930",
+  "notificationId": 1,
+  "id": "a0dc2dab-092e-4897-8fc2-8885d52ba345",
+  "eventType": "workitem.updated",
+  "publisherId": "tfs",
+  "message": {
+    "text": "User Story #1478 (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl\r\n(https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1478)",
+    "html": "<a href=\"https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&amp;id=1478\">User Story #1478</a> (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl",
+    "markdown": "[User Story #1478](https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1478) (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl"
+  },
+  "detailedMessage": {
+    "text": "User Story #1478 (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl\r\n(https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1478)\r\n\r\n- New State: Estimated\r\n",
+    "html": "<a href=\"https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&amp;id=1478\">User Story #1478</a> (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl<ul>\r\n<li>New State: Estimated</li></ul>",
+    "markdown": "[User Story #1478](https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1478) (Three Bridge Solutions - D365 Portal Configurations) transitioned to Estimated by Luke Grindahl\r\n\r\n* New State: Estimated\r\n"
+  },
+  "resource": {
+    "id": 5,
+    "workItemId": 1478,
+    "rev": 5,
+    "revisedBy": {
+      "id": "02dffad7-c05b-6068-9e77-6cc0e4698538",
+      "name": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+      "displayName": "Luke Grindahl",
+      "url": "https://spsprodcus1.vssps.visualstudio.com/Aec80bb93-fcb3-484b-9210-1d7bf155659f/_apis/Identities/02dffad7-c05b-6068-9e77-6cc0e4698538",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/rsm-appdev/_apis/GraphProfile/MemberAvatars/aad.MDJkZmZhZDctYzA1Yi03MDY4LTllNzctNmNjMGU0Njk4NTM4"
+        }
+      },
+      "uniqueName": "lgrindahl@rsmdemo.com",
+      "imageUrl": "https://dev.azure.com/rsm-appdev/_apis/GraphProfile/MemberAvatars/aad.MDJkZmZhZDctYzA1Yi03MDY4LTllNzctNmNjMGU0Njk4NTM4",
+      "descriptor": "aad.MDJkZmZhZDctYzA1Yi03MDY4LTllNzctNmNjMGU0Njk4NTM4"
+    },
+    "revisedDate": "2019-09-25T19:28:25.973Z",
+    "fields": {
+      "System.Rev": {
+        "oldValue": 4,
+        "newValue": 5
+      },
+      "System.AuthorizedDate": {
+        "oldValue": "2019-09-25T19:25:12.32Z",
+        "newValue": "2019-09-25T19:28:25.35Z"
+      },
+      "System.RevisedDate": {
+        "oldValue": "2019-09-25T19:28:25.35Z",
+        "newValue": "2019-09-25T19:28:25.973Z"
+      },
+      "System.State": {
+        "oldValue": "Scoping",
+        "newValue": "Estimated"
+      },
+      "System.Reason": {
+        "oldValue": "Moved to state Scoping",
+        "newValue": "Moved out of state Scoping"
+      },
+      "System.ChangedDate": {
+        "oldValue": "2019-09-25T19:25:12.32Z",
+        "newValue": "2019-09-25T19:28:25.35Z"
+      },
+      "System.Watermark": {
+        "oldValue": 7405,
+        "newValue": 7406
+      },
+      "System.BoardColumn": {
+        "oldValue": "Scoping",
+        "newValue": "Estimated"
+      },
+      "Microsoft.VSTS.Common.StateChangeDate": {
+        "oldValue": "2019-09-25T13:12:14.437Z",
+        "newValue": "2019-09-25T19:28:25.35Z"
+      },
+      "WEF_9C2600DFC92545EE9A6D3EBCA10318CD_Kanban.Column": {
+        "oldValue": "Scoping",
+        "newValue": "Estimated"
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/updates/5"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/updates"
+      },
+      "parent": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478"
+      },
+      "html": {
+        "href": "https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1478"
+      }
+    },
+    "url": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/updates/5",
+    "revision": {
+      "id": 1478,
+      "rev": 5,
+      "fields": {
+        "System.WorkItemType": "User Story",
+        "System.State": "Estimated",
+        "System.Reason": "Moved out of state Scoping",
+        "System.AssignedTo": "Derek Bruun <dbruun@rsmdemo.com>",
+        "System.CreatedDate": "2019-09-25T13:11:57.433Z",
+        "System.CreatedBy": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+        "System.ChangedDate": "2019-09-25T19:28:25.35Z",
+        "System.ChangedBy": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+        "System.CommentCount": 2,
+        "System.TeamProject": "IP-D365CE",
+        "System.AreaPath": "IP-D365CE",
+        "System.IterationPath": "IP-D365CE",
+        "System.Title": "Three Bridge Solutions - D365 Portal Configurations",
+        "System.BoardColumn": "Estimated",
+        "System.BoardColumnDone": false,
+        "Microsoft.VSTS.Common.StateChangeDate": "2019-09-25T19:28:25.35Z",
+        "Microsoft.VSTS.Common.Priority": 2,
+        "Microsoft.VSTS.Common.ValueArea": "Business",
+        "Microsoft.VSTS.Scheduling.Effort": 24.0,
+        "RSMAgile.ClientName": "Three Bridge Solutions",
+        "RSMAgile.Platform": "CRM",
+        "RSMAgile.ConsultantName": "Ryan.Lee-Norman@rsmus.com",
+        "RSMAgile.RequestType": "General Information",
+        "WEF_9C2600DFC92545EE9A6D3EBCA10318CD_Kanban.Column": "Estimated",
+        "WEF_9C2600DFC92545EE9A6D3EBCA10318CD_Kanban.Column.Done": false,
+        "System.Description": "<p>Three Bridge Solutions has a portal for External Users to Approve Time Entries. They had a few custom requirements: </p><p>1) Ability to select multiple time entries in the Entity List of Time Entries. </p><p>2) Execute the Workflow on selected Time Entries to approve the Time Entries. </p>"
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Related",
+          "url": "https://dev.azure.com/rsm-appdev/359e5b6b-f8d3-4cb4-aadd-800e671b97bb/_apis/wit/workItems/1477",
+          "attributes": {
+            "isLocked": false,
+            "name": "Related"
+          }
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/revisions/5"
+        },
+        "workItemRevisions": {
+          "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/revisions"
+        },
+        "parent": {
+          "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478"
+        }
+      },
+      "url": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1478/revisions/5"
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "b1cab001-7109-4ea0-a4d1-2497ff181f14",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    },
+    "account": {
+      "id": "ec80bb93-fcb3-484b-9210-1d7bf155659f",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    },
+    "project": {
+      "id": "07372142-9711-43af-9130-44de416fe687",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    }
+  },
+  "createdDate": "2019-09-25T19:28:32.8743338Z"
+}
