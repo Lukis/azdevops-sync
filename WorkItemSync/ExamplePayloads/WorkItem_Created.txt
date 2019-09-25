@@ -1,0 +1,112 @@
+﻿Method: POST
+URI: https://rsmappdev-workitem-sync.azurewebsites.net/api/WorkItemCreated?code=prM1ZWDHLc/6R8ODjgMUHmNaaqxDa07fft0R0zYQSqlQKnHHarozRw==
+HTTP Version: 1.1
+Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+Content:
+{
+  "subscriptionId": "a24458ec-7bf2-4b5b-97cf-c0845128b970",
+  "notificationId": 1,
+  "id": "2c1a0049-0936-4b1c-a7cd-ee4ce301f69a",
+  "eventType": "workitem.created",
+  "publisherId": "tfs",
+  "message": {
+    "text": "User Story #1479 (Testing http trigger for work item) created by Luke Grindahl\r\n(https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1479)",
+    "html": "<a href=\"https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&amp;id=1479\">User Story #1479</a> (Testing http trigger for work item) created by Luke Grindahl",
+    "markdown": "[User Story #1479](https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1479) (Testing http trigger for work item) created by Luke Grindahl"
+  },
+  "detailedMessage": {
+    "text": "User Story #1479 (Testing http trigger for work item) created by Luke Grindahl\r\n(https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1479)\r\n\r\n- Area: IP-D365CE\r\n- Iteration: IP-D365CE\r\n- State: New\r\n- Assigned to: Luke Grindahl <lgrindahl@rsmdemo.com>\r\n",
+    "html": "<a href=\"https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&amp;id=1479\">User Story #1479</a> (Testing http trigger for work item) created by Luke Grindahl<ul>\r\n<li>Area: IP-D365CE</li>\r\n<li>Iteration: IP-D365CE</li>\r\n<li>State: New</li>\r\n<li>Assigned to: Luke Grindahl <lgrindahl@rsmdemo.com></li></ul>",
+    "markdown": "[User Story #1479](https://dev.azure.com/rsm-appdev/web/wi.aspx?pcguid=b1cab001-7109-4ea0-a4d1-2497ff181f14&id=1479) (Testing http trigger for work item) created by Luke Grindahl\r\n\r\n* Area: IP-D365CE\r\n* Iteration: IP-D365CE\r\n* State: New\r\n* Assigned to: Luke Grindahl <lgrindahl@rsmdemo.com>\r\n"
+  },
+  "resource": {
+    "id": 1479,
+    "rev": 1,
+    "fields": {
+      "System.AreaPath": "IP-D365CE",
+      "System.TeamProject": "IP-D365CE",
+      "System.IterationPath": "IP-D365CE",
+      "System.WorkItemType": "User Story",
+      "System.State": "New",
+      "System.Reason": "New",
+      "System.AssignedTo": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+      "System.CreatedDate": "2019-09-25T15:49:31.65Z",
+      "System.CreatedBy": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+      "System.ChangedDate": "2019-09-25T15:49:31.65Z",
+      "System.ChangedBy": "Luke Grindahl <lgrindahl@rsmdemo.com>",
+      "System.CommentCount": 0,
+      "System.Title": "Testing http trigger for work item",
+      "System.BoardColumn": "New",
+      "System.BoardColumnDone": false,
+      "Microsoft.VSTS.Common.StateChangeDate": "2019-09-25T15:49:31.65Z",
+      "Microsoft.VSTS.Common.Priority": 2,
+      "Microsoft.VSTS.Common.ValueArea": "Business",
+      "Microsoft.VSTS.Scheduling.DueDate": "2019-10-03T05:00:00Z",
+      "RSMAgile.ClientName": "Custom: ClientName",
+      "RSMAgile.Platform": "CRM",
+      "RSMAgile.ConsultantName": "Ryan Lee-Norman",
+      "RSMAgile.ProjectBilledTo": "109123",
+      "RSMAgile.RequestType": "ReqType: Information",
+      "RSMAgile.ProjectInformation": "Custom: Project Information link",
+      "WEF_9C2600DFC92545EE9A6D3EBCA10318CD_Kanban.Column": "New",
+      "WEF_9C2600DFC92545EE9A6D3EBCA10318CD_Kanban.Column.Done": false,
+      "System.Description": "<div>Description text</div>",
+      "Microsoft.VSTS.Common.AcceptanceCriteria": "<div>Acceptance Criteria</div>",
+      "System.Tags": "Tag1"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Related",
+        "url": "https://dev.azure.com/rsm-appdev/359e5b6b-f8d3-4cb4-aadd-800e671b97bb/_apis/wit/workItems/1477",
+        "attributes": {
+          "isLocked": false,
+          "comment": "Original Record Linked Example",
+          "name": "Related"
+        }
+      }
+    ],
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1479"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1479/updates"
+      },
+      "workItemRevisions": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1479/revisions"
+      },
+      "workItemComments": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1479/comments"
+      },
+      "html": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_workitems/edit/1479"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItemTypes/User%20Story"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/fields"
+      }
+    },
+    "url": "https://dev.azure.com/rsm-appdev/07372142-9711-43af-9130-44de416fe687/_apis/wit/workItems/1479"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "b1cab001-7109-4ea0-a4d1-2497ff181f14",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    },
+    "account": {
+      "id": "ec80bb93-fcb3-484b-9210-1d7bf155659f",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    },
+    "project": {
+      "id": "07372142-9711-43af-9130-44de416fe687",
+      "baseUrl": "https://dev.azure.com/rsm-appdev/"
+    }
+  },
+  "createdDate": "2019-09-25T15:49:39.6775343Z"
+}
